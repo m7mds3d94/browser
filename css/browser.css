@@ -1,0 +1,147 @@
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+::-webkit-scrollbar {
+    background-color: transparent;
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: transparent !important;
+    border-radius: 20px;
+    height: 70px;
+}
+
+/* start top bar in browser */
+.bar {
+    margin-top: 30px;
+}
+
+.allbutton button:hover 
+{
+   border-radius: 35%;
+   background-color: #ddd;
+}
+
+.allbutton button {
+    transition: all 0.2s ease-in !important;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    border-radius: 35%;
+}
+.reload
+{
+    transform: rotate(0deg);
+}
+
+.contain {
+    text-align: center;
+    margin-top: 300px;
+    text-transform: capitalize;
+}
+
+.spinner-border {
+    font-size: 10px;
+}
+.frame {
+    display: none !important;
+}
+.put {
+    display: block !important;
+}
+
+
+
+/* start url */
+
+
+.type-search
+{
+    
+    display: block;
+    width: 100%;
+    height: 30px;
+    padding: 15px 10px;
+    font-weight: 400;
+    font-family: cursive;
+    caret-color: #718093;
+    line-height: 1.5;
+    color: #495057;
+    background-color: transparent;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 20px;
+    transition: border-color 0.4s ease-in-out,box-shadow 0.4s ease-in-out;
+}
+
+.form-control:focus {
+    border: 2px solid #718093 !important;
+    box-shadow: none !important;
+}
+.type-search:focus-visible , .type-search:focus-within
+{
+    outline: none !important;
+    box-shadow: 1px 1px 3px 1px #dfe4ea;
+
+}
+
+.fra {
+    height: 100%;
+    background-color: #fff;
+    margin-top: 10px;
+}
+
+iframe {
+    border: none;
+    border-radius: 10px;
+    width: 100%;
+    height: 100vh;
+}
+.allbutton 
+{
+    justify-content: center;
+}
+
+/* end top bar in browser */
+
+
+/* start media query all button cick */
+
+
+@media screen and (max-width:576px) {
+    .allbutton 
+    {
+        justify-content: space-between !important;
+        margin-bottom: 20px;
+    }
+    .forward
+    {
+        order: 1;
+    }
+}
+@media screen and (min-width:576px) and (max-width: 768px) {
+    .allbutton 
+    {
+        justify-content: space-around !important;
+    }
+}
+@media screen and (min-width:768px) and (max-width: 992px) {
+    .allbutton 
+    {
+        justify-content: space-around !important;
+    }
+}
